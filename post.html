@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/about-me.css">
+    <link rel="stylesheet" href="assets/css/blogs.css">
 </head>
 
 <body>
@@ -54,37 +57,40 @@
         </article>
     </main>
 
-    <section class="posts">
-        <p>Recent posts</p>
-        <article class="post blog post-1 blog-1">
-            <img src="assets/images/image2.png" alt="open laptop on a desk with code displayed on a bright day">
-            <time datetime="2023-09-18">September 18, 2023</time>
-            <h2 class="blog-title">Blog one</h2>
-            <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
-                several months of
-                learning in the Frontend Developer Career Path.</p>
-        </article>
+    <div class="container">
+        <section class="posts blogs">
+            <p>Recent posts</p>
+            <article class="post blog post-1 blog-1">
+                <img class="blog-img" src="assets/images/image2.png"
+                    alt="open laptop on a desk with code displayed on a bright day">
+                <time datetime="2023-09-18">September 18, 2023</time>
+                <h2 class="blog-title">Blog one</h2>
+                <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
 
-        <article class="post blog post-2 blog-2">
-            <img src="assets/images/image3.png"
-                alt="a person holding up a lightbulb with a pinkish-bluish gradient sky in front of them">
-            <time datetime="2023-09-18">September 18, 2023</time>
-            <h2 class="blog-title">Blog two</h2>
-            <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
-                several months of
-                learning in the Frontend Developer Career Path.</p>
-        </article>
+            <article class="post blog post-2 blog-2">
+                <img class="blog-img" src="assets/images/image3.png"
+                    alt="a person holding up a lightbulb with a pinkish-bluish gradient sky in front of them">
+                <time datetime="2023-09-18">September 18, 2023</time>
+                <h2 class="blog-title">Blog two</h2>
+                <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
 
-        <article class="post blog post-3 blog-3">
-            <img src="assets/images/image4.png"
-                alt="a laptop on a desk in a well-lit space with a mission quote on the screen">
-            <time datetime="2023-09-18">September 18, 2023</time>
-            <h2 class="blog-title">Blog three</h2>
-            <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
-                several months of
-                learning in the Frontend Developer Career Path.</p>
-        </article>
-    </section>
+            <article class="post blog post-3 blog-3">
+                <img class="blog-img" src="assets/images/image4.png"
+                    alt="a laptop on a desk in a well-lit space with a mission quote on the screen">
+                <time datetime="2023-09-18">September 18, 2023</time>
+                <h2 class="blog-title">Blog three</h2>
+                <p class="blog-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of
+                    learning in the Frontend Developer Career Path.</p>
+            </article>
+        </section>
+    </div>
 
     <footer>
         <p>My Learning Journal</p>
