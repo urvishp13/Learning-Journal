@@ -3,19 +3,23 @@ body {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 /* //////// FLEX CONTAINERS ///////////// */
 
-header,
+header > .container,
 nav ul {
     display: flex;
 }
 
 /* /////////////// HEADER /////////////// */
 
-header {
+header > .container {
     align-items: center;
     gap: .19em;
-    padding: 1.06em 1.5em 1.18em 1.25em;
+    padding: 1.06em 0 1.18em 0;
 }
 
 .logo {
