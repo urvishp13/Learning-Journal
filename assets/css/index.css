@@ -4,3 +4,43 @@ body {
     padding: 0;
 }
 
+/* //////////// HERO SECTION ///////////////// */
+
+.hero > article {
+    position: relative;
+}
+
+.hero-img {
+    height: 18.3125rem;
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, 0.31) 0%, 
+        rgba(0, 0, 0, 0.31) 100%), 
+        url("../images/image1.png"),
+        lightgray 0px -255.741px / 100% 188.396% no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+.post-details-hero {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    transform: translate(0, -5%);
+    color: #FFF;
+}
+
+.post-details-hero > time {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.post-title-hero {
+    font-size: 2rem;
+    margin: 0.25em 0 0.25em;
+    line-height: 1.082;
+}
+
+.post-desc-hero {
+    margin-top: 0;
+}
