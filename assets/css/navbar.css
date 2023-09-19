@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* //////// FLEX CONTAINERS ///////////// */
+
+header,
+nav ul {
+    display: flex;
+}
+
+/* /////////////// HEADER /////////////// */
+
+header {
+    align-items: center;
+    gap: .19em;
+    padding: 1.06em 1.5em 1.18em 1.25em;
+}
+
+.logo {
+    width: 1.44763rem;
+}
+
+header > span {
+    color: #0E0E0E;
+    font-size: .847rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.082;
+    letter-spacing: -.03em;
+}
+
+/* /////////////// NAVIGATION ///////////////// */
+
+nav {
+    margin-left: auto;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 1.5em;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
