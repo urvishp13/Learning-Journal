@@ -31,7 +31,7 @@ header > .container {
     width: 1.44763rem;
 }
 
-header > span {
+.site-name {
     color: #0E0E0E;
     font-size: .847rem;
     font-family: 'Roboto', sans-serif;
