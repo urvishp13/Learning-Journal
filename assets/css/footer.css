@@ -1,0 +1,23 @@
+/* ///////////// FOOTER SECTION /////////////// */
+
+footer {
+    background-color: #202020;
+    text-align: center;
+    padding: 2.31em 9.56em 2.31em 9.5em;
+}
+
+footer > .site-name {
+    color: #ECECEC;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.082;
+    letter-spacing: -0.03em;
+    margin: 0;
+}
+
+.copyright {
+    color: #D7D7D7;
+    font-size: .75rem;
+    line-height: 1.25;
+    margin: 0;
+}
