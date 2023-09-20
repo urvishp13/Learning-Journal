@@ -58,3 +58,17 @@ body {
 .post-desc-hero {
     margin-top: 0;
 }
+
+/* //////////// VIEW MORE BUTTON ///////////// */
+
+button {
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2.56em;
+    cursor: pointer;
+}
