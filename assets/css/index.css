@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 
-.hero-img-wrapper {
+/* .hero-img-wrapper {
     position: relative;
 }
 
@@ -34,13 +34,25 @@ body {
     z-index: 1;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%);
     mix-blend-mode: overlay;
+} */
+
+.bg-img {
+    height: 18.3125rem;
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), 
+        url("../images/image1.png"), 
+        lightgray 0px -255.741px / 100% 188.396% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left 0% bottom 0%;
+    transform: scaleX(-1);
 }
 
 .post-details-hero {
     position: absolute;
     bottom: 0;
     left: 5%;
-    transform: translate(0, -5%);
+    transform: translate(0, -5%) scaleX(-1);
     color: #FFF;
 }
 
