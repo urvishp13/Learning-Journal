@@ -7,7 +7,7 @@ body {
 /* //////////// HERO SECTION ///////////////// */
 
 .hero > article {
-    position: relative;
+    /* position: relative; */
 }
 
 /* .hero-img-wrapper {
@@ -36,7 +36,13 @@ body {
     mix-blend-mode: overlay;
 } */
 
+.hero a {
+    text-decoration: none;
+}
+
 .bg-img {
+    display: flex;
+    align-items: end;
     height: 18.3125rem;
     background: linear-gradient(
         0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), 
@@ -49,10 +55,7 @@ body {
 }
 
 .post-details-hero {
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    transform: translate(0, -5%) scaleX(-1);
+    transform: scaleX(-1);
     color: #FFF;
 }
 

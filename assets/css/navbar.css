@@ -10,6 +10,7 @@ body {
 
 .container {
     width: 90%;
+    max-width: 1085px;
     margin: 0 auto;
 }
 /* //////// FLEX CONTAINERS ///////////// */
