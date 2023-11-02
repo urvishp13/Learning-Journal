@@ -14,3 +14,32 @@
     line-height: 1.082;
     letter-spacing: -0.03em;
 }
+
+@media (min-width: 67.8125rem) {
+    
+    .about-me-section > .container {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "pic headline"
+            "details details";
+        column-gap: 2.06rem;
+        row-gap: 4.06rem;
+    }
+
+    .self-img {
+        grid-area: pic;
+    }
+
+    .about-me-section-headline {
+        grid-area: headline;
+    }
+
+    .about-me-section-headline + div {
+        grid-area: details;
+        justify-self: center;
+        width: 52.75rem;
+    }
+
+}

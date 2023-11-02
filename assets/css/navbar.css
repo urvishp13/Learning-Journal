@@ -29,12 +29,12 @@ header > .container {
 }
 
 .logo {
-    width: 1.44763rem;
+    width: 1.44763em;
 }
 
 .site-name {
     color: #0E0E0E;
-    font-size: .847rem;
+    font-size: .847em;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.082;
@@ -55,8 +55,16 @@ nav > ul {
 nav a {
     text-decoration: none;
     margin-left: 1.5em;
-    font-size: .75rem;
+    font-size: .75em;
     font-weight: 600;
     color: #000;
     text-transform: uppercase;
+}
+
+@media (min-width: 67.8125rem) {
+    
+    header > .container {
+        font-size: 1.47em;
+    }
+
 }
