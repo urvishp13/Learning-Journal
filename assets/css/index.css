@@ -6,36 +6,6 @@ body {
 
 /* //////////// HERO SECTION ///////////////// */
 
-.hero > article {
-    /* position: relative; */
-}
-
-/* .hero-img-wrapper {
-    position: relative;
-}
-
-.hero-img {
-    display: block;
-    width: 100%;
-    height: 18.3125rem;
-    border-radius: 0.1875rem;
-    transform: scaleX(-1);
-    object-fit: cover;
-    object-position: left 0% bottom 0%;
-}
-
-.hero-img-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%);
-    mix-blend-mode: overlay;
-} */
-
 .hero a {
     text-decoration: none;
 }
@@ -43,20 +13,23 @@ body {
 .bg-img {
     display: flex;
     align-items: end;
-    height: 18.3125rem;
+    height: clamp(18.3125rem, 50vw, 30.5rem);
     background: linear-gradient(
         0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), 
         url("../images/image1.png"), 
         lightgray 0px -255.741px / 100% 188.396% no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: left 0% bottom 0%;
+    background-position: left 0% bottom 28%;
     transform: scaleX(-1);
 }
 
 .post-details-hero {
     transform: scaleX(-1);
     color: #FFF;
+    width: clamp(320px, 90%, 38.427rem);
+    margin-left: auto;
+    margin-bottom: clamp(1.56em, 5%, 3.7em);
 }
 
 .post-posting-date {
@@ -86,4 +59,13 @@ button {
     font-size: 1rem;
     margin-bottom: 2.56em;
     cursor: pointer;
+}
+
+@media (min-width: 67.8125rem) {
+
+    .post-details-hero {
+        /* width: 38.427rem;
+        margin-left: auto; */
+    }
+
 }

@@ -15,6 +15,12 @@
     margin-bottom: 2.56em;
 }
 
+.blog-4,
+.blog-5,
+.blog-6 {
+    display: none;
+}
+
 .blog-img-wrapper {
     width: 100%;
     height: fit-content;
@@ -53,4 +59,14 @@
 
 button {
     grid-column: 1 / -1;
+}
+
+@media (min-width: 67.8125rem) {
+    
+    .blog-4,
+    .blog-5,
+    .blog-6 {
+        display: block;
+    }
+
 }
