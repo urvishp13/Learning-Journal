@@ -13,7 +13,7 @@ body {
 .bg-img {
     display: flex;
     align-items: end;
-    height: clamp(18.3125rem, 50vw, 30.5rem);
+    min-height: 18.3125rem;
     background: linear-gradient(
         0deg, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 100%), 
         url("../images/image1.png"), 
@@ -25,9 +25,9 @@ body {
 }
 
 .post-details-hero {
+    max-width: 41.0625rem;
     transform: scaleX(-1);
     color: #FFF;
-    width: clamp(320px, 90%, 38.427rem);
     margin-left: auto;
     margin-bottom: clamp(1.56em, 5%, 3.7em);
 }
@@ -63,9 +63,8 @@ button {
 
 @media (min-width: 67.8125rem) {
 
-    .post-details-hero {
-        /* width: 38.427rem;
-        margin-left: auto; */
+    .bg-img {
+        height: 30.5rem;
     }
 
 }

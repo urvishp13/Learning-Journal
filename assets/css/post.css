@@ -26,8 +26,7 @@
 .article-img {
     display: block;
     width: 100%;
-    /* height: 11.9375rem; */
-    height: clamp(11.9375rem, 70vw, 30.5rem);
+    height: 11.9375rem;
     border-radius: 0.1875rem;
     transform: scaleX(-1);
     object-fit: cover;
@@ -62,6 +61,10 @@
     .article > .article-img-wrapper {
         justify-self: center;
         width: 100%;
+    }
+
+    .article-img {
+        height: 30.5rem;
     }
 
 }
