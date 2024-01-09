@@ -1,21 +1,73 @@
-# co2f74a26976f9b253b09b730
+# Learning Journal
 
-Quick start:
+A blog site that allows an individual to keep record of their learning journey.
 
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+This project is meant to teach all the workings of responsive design, such as relative units, CSS grid, and mobile-first design.
+
+### Screenshot
+
+Here are screenshots of the main page only.
+
+![Desktop view](assets/screenshots/desktop-view.png)
+![Mobile view](assets/screenshots/mobile-view.png)
+
+### Links
+
+Live site: [https://pathway-to-education.netlify.app/](https://pathway-to-education.netlify.app/)
+
+## My process
+
+Went through this page-by-page. The main focus was the CSS and, as there were many repeated structures across the pages, decided to modularize the CSS to make for DRYer (Don't-Repeat-Yourself) code.
+
+### Built with
+
+HTML, CSS
+
+### What I learned
+
+```css
+@media (min-width: 67.8125rem) {
+    
+    header > .container {
+        font-size: 1.47em;
+    }
+
+}
 ```
-$ npm install
-$ npm start
-````
+`em` units can be utilized in responsive design when dealing with different browser sizes. Utilizing `font-size` with `em` units in media queries will scale all the elements based in responsive units at smaller browser widths without having to alter their properties one-by-one in the larger-width media queries.
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+```css
+.article > div {
+    width: 52.625rem;
+}
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+.article > .article-img-wrapper {
+    justify-self: center;
+    width: 100%;
+}
+```
+Grid children can be given different widths. In the project, `article` is a grid. The width of the grid children was set to less than the grid's full-width, but the width of the image in the grid was made wider than it siblings. By doing this, it made the illusion that the image was flowing outside the bounds of the grid.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+### Useful resources
 
-Happy Coding!
+Scrimba's Frontend Developer Bootcamp content on implicit grid.
+
+## Author
+
+GitHub: [https://github.com/urvishp13](https://github.com/urvishp13)
